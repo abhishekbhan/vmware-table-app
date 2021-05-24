@@ -11,6 +11,7 @@ Things to consider:
 3. API integration
 4. Loaders and empty state handling
 5. Better confirmations on edit/delete/update
+6. Component tags naming/component naming should be better. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
