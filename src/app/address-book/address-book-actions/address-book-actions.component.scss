@@ -1,0 +1,32 @@
+.table-actions-container {
+    margin: 1rem 0;
+    display: flex;
+    width: 100%;
+
+    .btn {
+        color: white;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        font-size: 0.875rem;
+        outline: none;
+        border: none;
+        opacity: 1;
+        transition: 0.5s opacity ease;
+        border-radius: 4px;
+
+        &:hover, &:focus {
+            opacity: 0.8;
+        }
+
+        &.btn-action-info {
+            background-color: #ffa500;
+            margin-left: 10px;
+        }
+
+        &.btn-action-delete {
+            background-color:	#ff0021;
+            margin-right: auto;
+        }
+
+    }
+}

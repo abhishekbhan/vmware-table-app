@@ -1,0 +1,32 @@
+<h3 class="table-heading">
+  Sortable/editable table
+</h3>
+<table class="table-container" #addressBook>
+  <thead>
+    <tr>
+      <th rowspan='2'>
+        <label for="checkbox-global" (click)="selectDeselectAll($event)">
+          <input class="checkbox-global" name="checkbox-global" type="checkbox" [(ngModel)]="allSelected" />
+        </label>
+      </th>
+      <th rowspan='2' data-sort="id">ID</th>
+      <th rowspan='2' data-sort="name">Name</th>
+      <th rowspan='2'data-sort="location">Location</th>
+      <th rowspan='2' data-sort="office">Office</th>
+      <th rowspan='1' colspan='2' class="super">Phone</th>
+    </tr>
+    <tr>
+      <th rowspan='1' data-sort="officePhone">Office</th>
+      <th rowspan='1' data-sort="cellPhone">Cell</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let address of addresses">
+      <tr app-table-row [address]='address'></tr>
+    </ng-container>
+    <ng-container *ngFor="let newAddress of newAddresses">
+      <tr app-table-new-row [address]='newAddress'></tr>
+    </ng-container>
+  </tbody>
+</table>
+<app-table-actions></app-table-actions>

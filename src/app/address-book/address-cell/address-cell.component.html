@@ -1,0 +1,11 @@
+
+<ng-container *ngIf="isEditing">
+  <label>
+    <input class="input-edit-cell" type="text" autofocus [(ngModel)]='obj[value]' (blur)="onInputBlur()" />
+  </label>
+</ng-container>
+<ng-container *ngIf="!isEditing">
+  <span (dblclick)="method2CallForDblClick();">
+    {{obj[value]}}
+  </span>
+</ng-container>

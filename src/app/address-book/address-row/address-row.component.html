@@ -1,0 +1,12 @@
+<td>
+  <label for="checkbox-row">
+    <input class="checkbox-row" name="checkbox-row" type="checkbox" [(ngModel)]="address.selected" />
+  </label>
+</td>
+<td app-table-cell [editing]='isEditing' [allowEdit]='false' [value]='"id"' [obj]='address'></td>
+<td app-table-cell [editing]='isEditing' [allowEdit]='false' [value]="'name'" [obj]='address'></td>
+<td app-table-cell [editing]='isEditing' [allowEdit]='false' [value]="'location'" [obj]='address'></td>
+<td app-table-cell [editing]='isEditing' [allowEdit]='false' [value]="'office'" [obj]='address'></td>
+<td app-table-cell [editing]='isEditing' [allowEdit]='true' [value]="'officePhone'" [obj]='address'></td>
+<td app-table-cell [editing]='isEditing' [allowEdit]='true' [value]="'cellPhone'" [obj]='address'></td>
+
